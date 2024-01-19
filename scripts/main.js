@@ -41,15 +41,9 @@ document.getElementById('colorPicker').addEventListener('click', function (event
 for (const item of grid_cells) {
 
   item.addEventListener('click', function () {
-
-
     const id = item.id
 
     document.getElementById(id).style.background = color
-
-
-
-
 
   })
 
