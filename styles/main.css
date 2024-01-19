@@ -11,15 +11,15 @@ body {
 
 .app {
   max-width: 430px;
-  height: 100vh;
-  border: 1px solid gray;
+  /* height: 100vh; */
+  /* border: 1px solid gray; */
 }
 
 
 .parameters_container {
   width: 100%;
   height: 150px;
-  border: 1px solid gray;
+  /* border: 1px solid gray; */
 }
 
 
@@ -33,9 +33,22 @@ body {
 .grid-item {
   background-color: #2e3238;
   /* Цвет фона ячейки */
-  border: 1px solid gray;
+  border: 1px solid #808080;
   /* Граница ячейки */
   width: 100%;
   padding-bottom: 100%;
   /* Процентное значение для поддержания квадратной формы */
+}
+
+.color-choice {
+  width: 30px;
+  /* Ширина кнопки */
+  height: 30px;
+  /* Высота кнопки */
+  border: none;
+  /* Убрать границу */
+  margin: 5px;
+  /* Отступы вокруг кнопки */
+  cursor: pointer;
+  /* Стиль курсора */
 }

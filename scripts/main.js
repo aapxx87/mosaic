@@ -15,10 +15,42 @@ function createGrid(containerId, rows, cols) {
   for (let i = 0; i < totalCells; i++) {
     const cell = document.createElement('div');
     cell.classList.add('grid-item');
+    cell.id = `cell-${i}`
     container.appendChild(cell);
   }
+
 }
 
-
-
 createGrid('grid-container', 8, 8);
+
+
+
+const grid_cells = document.querySelectorAll('.grid-item')
+
+let color = '#baafaf'
+
+
+document.getElementById('colorPicker').addEventListener('click', function (event) {
+  if (event.target.classList.contains('color-choice')) {
+    color = event.target.getAttribute('data-color');
+  }
+});
+
+
+
+for (const item of grid_cells) {
+
+  item.addEventListener('click', function () {
+
+
+    const id = item.id
+
+    document.getElementById(id).style.background = color
+
+
+
+
+
+  })
+
+}
