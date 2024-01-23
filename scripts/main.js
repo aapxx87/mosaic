@@ -21,7 +21,7 @@ function createGrid(containerId, rows, cols) {
 
 }
 
-createGrid('grid-container', 8, 8);
+createGrid('grid-container', 14, 14);
 
 
 
