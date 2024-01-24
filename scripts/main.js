@@ -59,21 +59,40 @@ for (const item of grid_cells) {
 }
 
 
-const cells = document.querySelectorAll('.grid-item')
+
 
 
 btn_zoom_normal.addEventListener('click', function () {
+
   document.getElementById('grid-container').style.gridTemplateColumns = `repeat(200, 30px)`;
   document.getElementById('grid-container').style.gridTemplateRows = `repeat(200, 30px)`;
+
+  for (const item of grid_cells) {
+    item.style.border = '.1px solid #373c43'
+  }
+
 })
 
 btn_zoom_out_05.addEventListener('click', function () {
+
   document.getElementById('grid-container').style.gridTemplateColumns = `repeat(200, 15px)`;
   document.getElementById('grid-container').style.gridTemplateRows = `repeat(200, 15px)`;
+
+
+  for (const item of grid_cells) {
+    item.style.border = 'none'
+  }
+
 })
 
 
 btn_zoom_out_02.addEventListener('click', function () {
+
   document.getElementById('grid-container').style.gridTemplateColumns = `repeat(200, 6px)`;
   document.getElementById('grid-container').style.gridTemplateRows = `repeat(200, 6px)`;
+
+  for (const item of grid_cells) {
+    item.style.border = 'none'
+  }
+
 })
