@@ -1,6 +1,8 @@
-// const grid_container_playground = document.querySelector('.')
+const grid_container_playground = document.querySelector('.grid-container')
+const color_picker_container = document.querySelector('.color_picker_container')
 
 
+// Buttons
 const btn_zoom_normal = document.querySelector('.btn_zoom_normal')
 const btn_zoom_out_05 = document.querySelector('.btn_zoom_out_05')
 const btn_zoom_out_02 = document.querySelector('.btn_zoom_out_02')
@@ -8,9 +10,7 @@ const btn_zoom_out_02 = document.querySelector('.btn_zoom_out_02')
 
 
 
-function createGrid(containerId, rows, cols) {
-
-  const container = document.getElementById(containerId);
+function createGrid(container, rows, cols) {
 
   container.style.gridTemplateColumns = `repeat(${cols}, 30px)`;
   container.style.gridTemplateRows = `repeat(${rows}, 30px)`;
@@ -31,16 +31,15 @@ function createGrid(containerId, rows, cols) {
 
 }
 
-createGrid('grid-container', 200, 200);
+createGrid(grid_container_playground, 200, 200);
 
 
 
 const grid_cells = document.querySelectorAll('.grid-item')
 
-let color = '#baafaf'
 
 
-document.getElementById('colorPicker').addEventListener('click', function (event) {
+color_picker_container.addEventListener('click', function (event) {
   if (event.target.classList.contains('color-choice')) {
     color = event.target.getAttribute('data-color');
   }
@@ -48,13 +47,13 @@ document.getElementById('colorPicker').addEventListener('click', function (event
 
 
 
+let color = '#2e3238'
+
 for (const item of grid_cells) {
 
   item.addEventListener('click', function () {
     const id = item.id
-
     document.getElementById(id).style.background = color
-
   })
 
 }
@@ -63,27 +62,18 @@ for (const item of grid_cells) {
 const cells = document.querySelectorAll('.grid-item')
 
 
-
-
-
 btn_zoom_normal.addEventListener('click', function () {
-
   document.getElementById('grid-container').style.gridTemplateColumns = `repeat(200, 30px)`;
   document.getElementById('grid-container').style.gridTemplateRows = `repeat(200, 30px)`;
-
 })
 
 btn_zoom_out_05.addEventListener('click', function () {
-
   document.getElementById('grid-container').style.gridTemplateColumns = `repeat(200, 15px)`;
   document.getElementById('grid-container').style.gridTemplateRows = `repeat(200, 15px)`;
-
 })
 
 
 btn_zoom_out_02.addEventListener('click', function () {
-
   document.getElementById('grid-container').style.gridTemplateColumns = `repeat(200, 6px)`;
   document.getElementById('grid-container').style.gridTemplateRows = `repeat(200, 6px)`;
-
 })
