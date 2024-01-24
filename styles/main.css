@@ -19,10 +19,11 @@ body {
   width: 100%;
   height: 150px;
   overflow-y: scroll;
+  margin-bottom: 10px;
 }
 
 .color_picker_container {
-  height: 73px;
+  height: 108px;
   overflow-y: scroll;
   margin-bottom: 10px;
 }
