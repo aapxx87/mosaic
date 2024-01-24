@@ -11,15 +11,20 @@ body {
 
 .app {
   max-width: 430px;
-  /* height: 100vh; */
-  /* border: 1px solid gray; */
 }
 
 
 .parameters_container {
   width: 100%;
   height: 150px;
-  /* border: 1px solid gray; */
+}
+
+.playground_container {
+  width: 100%;
+  height: 655px;
+  border: 1px solid #484646;
+  overflow: scroll;
+  overflow-x: scroll;
 }
 
 
@@ -27,13 +32,13 @@ body {
   display: grid;
   width: 100%;
   /* Занимает 100% ширины родительского элемента */
-  grid-template-columns: repeat(auto-fill, minmax(0, 1fr));
+  /* grid-template-columns: repeat(auto-fill, minmax(0, 1fr)); */
 }
 
 .grid-item {
   background-color: #2e3238;
   /* Цвет фона ячейки */
-  border: 1px solid #808080;
+  border: .2px solid #484646;
   /* Граница ячейки */
   width: 100%;
   padding-bottom: 100%;
@@ -51,4 +56,8 @@ body {
   /* Отступы вокруг кнопки */
   cursor: pointer;
   /* Стиль курсора */
+}
+
+.scale {
+  transform: scale(0.5);
 }

@@ -1,9 +1,13 @@
+// const grid_container_playground = document.querySelector('.')
+
+
+
 function createGrid(containerId, rows, cols) {
 
   const container = document.getElementById(containerId);
 
-  container.style.gridTemplateColumns = `repeat(${cols}, 1fr)`;
-  container.style.gridTemplateRows = `repeat(${rows}, 1fr)`;
+  container.style.gridTemplateColumns = `repeat(${cols}, 30px)`;
+  container.style.gridTemplateRows = `repeat(${rows}, 30px)`;
 
   // Удаляем предыдущие ячейки, если они есть
   while (container.firstChild) {
@@ -21,7 +25,7 @@ function createGrid(containerId, rows, cols) {
 
 }
 
-createGrid('grid-container', 14, 14);
+createGrid('grid-container', 100, 100);
 
 
 
