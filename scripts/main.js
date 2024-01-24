@@ -1,6 +1,12 @@
 // const grid_container_playground = document.querySelector('.')
 
 
+const btn_zoom_normal = document.querySelector('.btn_zoom_normal')
+const btn_zoom_out_05 = document.querySelector('.btn_zoom_out_05')
+const btn_zoom_out_02 = document.querySelector('.btn_zoom_out_02')
+
+
+
 
 function createGrid(containerId, rows, cols) {
 
@@ -25,7 +31,7 @@ function createGrid(containerId, rows, cols) {
 
 }
 
-createGrid('grid-container', 100, 100);
+createGrid('grid-container', 200, 200);
 
 
 
@@ -52,3 +58,32 @@ for (const item of grid_cells) {
   })
 
 }
+
+
+const cells = document.querySelectorAll('.grid-item')
+
+
+
+
+
+btn_zoom_normal.addEventListener('click', function () {
+
+  document.getElementById('grid-container').style.gridTemplateColumns = `repeat(200, 30px)`;
+  document.getElementById('grid-container').style.gridTemplateRows = `repeat(200, 30px)`;
+
+})
+
+btn_zoom_out_05.addEventListener('click', function () {
+
+  document.getElementById('grid-container').style.gridTemplateColumns = `repeat(200, 15px)`;
+  document.getElementById('grid-container').style.gridTemplateRows = `repeat(200, 15px)`;
+
+})
+
+
+btn_zoom_out_02.addEventListener('click', function () {
+
+  document.getElementById('grid-container').style.gridTemplateColumns = `repeat(200, 6px)`;
+  document.getElementById('grid-container').style.gridTemplateRows = `repeat(200, 6px)`;
+
+})
