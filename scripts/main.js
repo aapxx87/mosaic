@@ -1,13 +1,27 @@
 const grid_container_playground = document.querySelector('.grid-container')
 const color_picker_container = document.querySelector('.color_picker_container')
-
+const favourite_colors_container = document.querySelector('.favourite_colors_container')
 
 // Buttons
 const btn_zoom_normal = document.querySelector('.btn_zoom_normal')
 const btn_zoom_out_05 = document.querySelector('.btn_zoom_out_05')
+const btn_zoom_out_035 = document.querySelector('.btn_zoom_out_035')
 const btn_zoom_out_02 = document.querySelector('.btn_zoom_out_02')
 
+const btn_color_to_favourite = document.querySelector('.btn_color_to_favourite')
+const btn_reset_favourite = document.querySelector('.btn_reset_favourite')
 
+
+colors.forEach(color => {
+  // Создание кнопки
+  const button = document.createElement('button');
+  button.className = 'color-choice';
+  button.setAttribute('data-color', color);
+  button.style.backgroundColor = color;
+
+  // Добавление кнопки в контейнер
+  color_picker_container.appendChild(button);
+});
 
 
 function createGrid(container, rows, cols) {
@@ -31,12 +45,14 @@ function createGrid(container, rows, cols) {
 
 }
 
-createGrid(grid_container_playground, 200, 200);
+createGrid(grid_container_playground, 250, 250);
 
 
 
 const grid_cells = document.querySelectorAll('.grid-item')
 
+
+let color = '#2e3238'
 
 
 color_picker_container.addEventListener('click', function (event) {
@@ -45,9 +61,13 @@ color_picker_container.addEventListener('click', function (event) {
   }
 });
 
+favourite_colors_container.addEventListener('click', function (event) {
+  if (event.target.classList.contains('color-choice')) {
+    color = event.target.getAttribute('data-color');
+  }
+});
 
 
-let color = '#2e3238'
 
 for (const item of grid_cells) {
 
@@ -57,6 +77,35 @@ for (const item of grid_cells) {
   })
 
 }
+
+
+btn_color_to_favourite.addEventListener('click', function () {
+
+  const button = document.createElement('button');
+  button.className = 'color-choice';
+  button.setAttribute('data-color', color);
+  button.style.backgroundColor = color;
+
+  // Добавление кнопки в контейнер
+  favourite_colors_container.appendChild(button);
+
+})
+
+
+
+btn_reset_favourite.addEventListener('click', function () {
+
+  favourite_colors_container.innerHTML = ''
+
+})
+
+
+
+
+
+
+
+
 
 
 
@@ -85,6 +134,16 @@ btn_zoom_out_05.addEventListener('click', function () {
 
 })
 
+btn_zoom_out_035.addEventListener('click', function () {
+
+  document.getElementById('grid-container').style.gridTemplateColumns = `repeat(200, 10px)`;
+  document.getElementById('grid-container').style.gridTemplateRows = `repeat(200, 10px)`;
+
+  for (const item of grid_cells) {
+    item.style.border = 'none'
+  }
+
+})
 
 btn_zoom_out_02.addEventListener('click', function () {
 

@@ -1,0 +1,23 @@
+.playground_container {
+  width: 100%;
+  height: 655px;
+  /* border: 1px solid #484646; */
+  overflow: scroll;
+  overflow-x: scroll;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#grid-container {
+  display: grid;
+  width: 100%;
+}
+
+.grid-item {
+  background-color: #2e3238;
+  /* Цвет фона ячейки */
+  border: .1px solid #373c43;
+  /* Граница ячейки */
+  width: 100%;
+  padding-bottom: 100%;
+  /* Процентное значение для поддержания квадратной формы */
+}
