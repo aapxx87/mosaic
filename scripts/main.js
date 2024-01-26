@@ -50,7 +50,7 @@ function createGrid(container, rows, cols) {
 
 }
 
-createGrid(grid_container_playground, 250, 250);
+createGrid(grid_container_playground, 150, 150);
 
 
 
@@ -120,8 +120,8 @@ btn_reset_favourite.addEventListener('click', function () {
 
 btn_zoom_normal.addEventListener('click', function () {
 
-  document.getElementById('grid-container').style.gridTemplateColumns = `repeat(250, 30px)`;
-  document.getElementById('grid-container').style.gridTemplateRows = `repeat(250, 30px)`;
+  document.getElementById('grid-container').style.gridTemplateColumns = `repeat(150, 30px)`;
+  document.getElementById('grid-container').style.gridTemplateRows = `repeat(150, 30px)`;
 
   for (const item of grid_cells) {
     item.style.border = '.1px solid #373c43'
@@ -131,8 +131,8 @@ btn_zoom_normal.addEventListener('click', function () {
 
 btn_zoom_out_05.addEventListener('click', function () {
 
-  document.getElementById('grid-container').style.gridTemplateColumns = `repeat(250, 15px)`;
-  document.getElementById('grid-container').style.gridTemplateRows = `repeat(250, 15px)`;
+  document.getElementById('grid-container').style.gridTemplateColumns = `repeat(150, 15px)`;
+  document.getElementById('grid-container').style.gridTemplateRows = `repeat(150, 15px)`;
 
 
   for (const item of grid_cells) {
@@ -143,8 +143,8 @@ btn_zoom_out_05.addEventListener('click', function () {
 
 btn_zoom_out_035.addEventListener('click', function () {
 
-  document.getElementById('grid-container').style.gridTemplateColumns = `repeat(250, 10px)`;
-  document.getElementById('grid-container').style.gridTemplateRows = `repeat(250, 10px)`;
+  document.getElementById('grid-container').style.gridTemplateColumns = `repeat(150, 10px)`;
+  document.getElementById('grid-container').style.gridTemplateRows = `repeat(150, 10px)`;
 
   for (const item of grid_cells) {
     item.style.border = 'none'
@@ -154,8 +154,8 @@ btn_zoom_out_035.addEventListener('click', function () {
 
 btn_zoom_out_02.addEventListener('click', function () {
 
-  document.getElementById('grid-container').style.gridTemplateColumns = `repeat(250, 6px)`;
-  document.getElementById('grid-container').style.gridTemplateRows = `repeat(250, 6px)`;
+  document.getElementById('grid-container').style.gridTemplateColumns = `repeat(150, 6px)`;
+  document.getElementById('grid-container').style.gridTemplateRows = `repeat(150, 6px)`;
 
   for (const item of grid_cells) {
     item.style.border = 'none'
