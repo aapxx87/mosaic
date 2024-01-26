@@ -10,9 +10,14 @@
 }
 
 body {
+  width: 100vw;
+  /* ширина вьюпорта */
+  height: 100vh;
+  /* высота вьюпорта */
   font-family: 'Roboto', sans-serif;
   background-color: #2e3238;
   color: #c8c6c6;
+  overflow: hidden;
 }
 
 .app {
