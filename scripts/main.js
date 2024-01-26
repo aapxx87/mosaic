@@ -16,6 +16,8 @@ const btn_reset_favourite = document.querySelector('.btn_reset_favourite')
 
 const btn_menu_open = document.querySelector('.btn_menu_open')
 
+const input_grid = document.querySelector('.input_grid')
+
 
 colors.forEach(color => {
   // Создание кнопки
@@ -50,7 +52,11 @@ function createGrid(container, rows, cols) {
 
 }
 
-createGrid(grid_container_playground, 150, 150);
+
+const row_col = 160
+
+
+createGrid(grid_container_playground, row_col, row_col);
 
 
 
@@ -120,46 +126,46 @@ btn_reset_favourite.addEventListener('click', function () {
 
 btn_zoom_normal.addEventListener('click', function () {
 
-  document.getElementById('grid-container').style.gridTemplateColumns = `repeat(150, 30px)`;
-  document.getElementById('grid-container').style.gridTemplateRows = `repeat(150, 30px)`;
+  document.getElementById('grid-container').style.gridTemplateColumns = `repeat(${row_col}, 30px)`;
+  document.getElementById('grid-container').style.gridTemplateRows = `repeat(${row_col}, 30px)`;
 
-  for (const item of grid_cells) {
-    item.style.border = '.1px solid #373c43'
-  }
+  // for (const item of grid_cells) {
+  //   item.style.border = '.1px solid #373c43'
+  // }
 
 })
 
 btn_zoom_out_05.addEventListener('click', function () {
 
-  document.getElementById('grid-container').style.gridTemplateColumns = `repeat(150, 15px)`;
-  document.getElementById('grid-container').style.gridTemplateRows = `repeat(150, 15px)`;
+  document.getElementById('grid-container').style.gridTemplateColumns = `repeat(${row_col}, 15px)`;
+  document.getElementById('grid-container').style.gridTemplateRows = `repeat(${row_col}, 15px)`;
 
 
-  for (const item of grid_cells) {
-    item.style.border = 'none'
-  }
+  // for (const item of grid_cells) {
+  //   item.style.border = 'none'
+  // }
 
 })
 
 btn_zoom_out_035.addEventListener('click', function () {
 
-  document.getElementById('grid-container').style.gridTemplateColumns = `repeat(150, 10px)`;
-  document.getElementById('grid-container').style.gridTemplateRows = `repeat(150, 10px)`;
+  document.getElementById('grid-container').style.gridTemplateColumns = `repeat(${row_col}, 10px)`;
+  document.getElementById('grid-container').style.gridTemplateRows = `repeat(${row_col}, 10px)`;
 
-  for (const item of grid_cells) {
-    item.style.border = 'none'
-  }
+  // for (const item of grid_cells) {
+  //   item.style.border = 'none'
+  // }
 
 })
 
 btn_zoom_out_02.addEventListener('click', function () {
 
-  document.getElementById('grid-container').style.gridTemplateColumns = `repeat(150, 6px)`;
-  document.getElementById('grid-container').style.gridTemplateRows = `repeat(150, 6px)`;
+  document.getElementById('grid-container').style.gridTemplateColumns = `repeat(${row_col}, 6px)`;
+  document.getElementById('grid-container').style.gridTemplateRows = `repeat(${row_col}, 6px)`;
 
-  for (const item of grid_cells) {
-    item.style.border = 'none'
-  }
+  // for (const item of grid_cells) {
+  //   item.style.border = 'none'
+  // }
 
 })
 
@@ -171,4 +177,21 @@ btn_menu_close.addEventListener('click', function () {
 
 btn_menu_open.addEventListener('click', function () {
   menu.style.display = 'block'
+})
+
+
+
+input_grid.addEventListener('change', function () {
+
+  if (this.checked) {
+    for (const item of grid_cells) {
+      item.style.border = '.1px solid #373c43'
+    }
+
+  } else {
+    for (const item of grid_cells) {
+      item.style.border = 'none'
+    }
+  }
+
 })
