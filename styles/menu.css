@@ -19,6 +19,8 @@
   z-index: 2;
 }
 
+
+
 .close_menu {
   position: absolute;
   top: 10px;
@@ -53,6 +55,10 @@
   overflow-y: scroll;
   margin-bottom: 15px;
   margin-top: 15px;
+}
+
+.color_picker_container::-webkit-scrollbar {
+  display: none;
 }
 
 .favourite_container {
