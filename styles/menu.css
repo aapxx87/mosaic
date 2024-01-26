@@ -55,6 +55,7 @@
   overflow-y: scroll;
   margin-bottom: 15px;
   margin-top: 15px;
+  padding-top: 3px;
 }
 
 .color_picker_container::-webkit-scrollbar {
