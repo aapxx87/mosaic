@@ -1,5 +1,6 @@
 @import url('parameters_container.css');
 @import url('playground_container.css');
+@import url('menu.css');
 
 
 * {
@@ -16,6 +17,8 @@ body {
 
 .app {
   max-width: 430px;
+  position: relative;
+  height: 100vh;
 }
 
 

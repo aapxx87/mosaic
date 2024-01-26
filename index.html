@@ -9,32 +9,55 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/main.css">
   <link rel="manifest" href="manifest.json">
-  <title>Pixel Art v.2.</title>
+  <title>Pixel Art v.3.</title>
 </head>
 
 <body>
 
   <div class="app">
 
-    <div class="parameters_container">
+    <div class="btn_menu_box">
+      <button class="btn btn_menu_open">M</button>
+    </div>
 
-      <div class="colors_container">
-        <div class="color_picker_container"></div>
-        <div class="favourite_colors_container"></div>
-      </div>
+    <div class="parameters_container">
 
       <button class="btn btn_zoom_out_02">.2x</button>
       <button class="btn btn_zoom_out_035">.35x</button>
       <button class="btn btn_zoom_out_05">.5x</button>
       <button class="btn btn_zoom_normal">1x</button>
 
-      <button class="btn btn_color_to_favourite">Add to 🎨</button>
-      <button class="btn btn_reset_favourite">Reset 🎨</button>
-
     </div>
 
     <div class="playground_container">
       <div id="grid-container" class="grid-container"></div>
+    </div>
+
+
+    <div class="menu_container">
+
+      <div class="close_menu">x</div>
+
+      <div class="colors_container">
+
+        <p class="sub_header">Colours grid</p>
+
+        <div class="color_picker_container"></div>
+
+        <p class="sub_header">Favourite</p>
+
+        <div class="favourite_container">
+          <div class="current_color_box"></div>
+          <div class="favourite_colors_container"></div>
+        </div>
+
+
+        <button class="btn btn_color_to_favourite">Add to 🎨</button>
+        <button class="btn btn_reset_favourite">Reset 🎨</button>
+
+      </div>
+
+
     </div>
 
   </div>
