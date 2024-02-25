@@ -1,29 +1,32 @@
 const saving_list = []
 
 
-
-
-
-
 const create_current_date_label = function () {
 
-  const current_dateTime = new Date()
+  const current_dateTime = new Date();
 
-  console.log(current_dateTime);
+  // Создаем массив с короткими названиями дней недели
+  const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
-  const day = current_dateTime.getDay()
-  const hours = current_dateTime.getHours()
-  const minutes = current_dateTime.getMinutes()
-  const seconds = current_dateTime.getSeconds()
+  // Получаем короткое название дня недели
+  const day = days[current_dateTime.getDay()];
 
-  const format_date = `${day} / ${hours}: ${minutes} : ${seconds}`
+  // Получаем часы, минуты и секунды, форматируем их
+  const hours = `${current_dateTime.getHours()}`.padStart(2, '0');
+  const minutes = `${current_dateTime.getMinutes()}`.padStart(2, '0');
+  const seconds = `${current_dateTime.getSeconds()}`.padStart(2, '0');
 
-  return format_date
+  // Комбинируем всё в итоговую строку
+  const format_date = `${day}, ${hours}:${minutes}:${seconds}`;
+
+  console.log(format_date);
+
+  return format_date;
 
 }
 
 
-
+create_current_date_label()
 
 
 
@@ -85,14 +88,14 @@ btn_save.addEventListener('click', function () {
 
 })
 
-
+// загрузка сохранненного рисунка
 const click_save_item = function () {
 
   document.querySelectorAll('.save_name').forEach(function (item) {
 
     item.addEventListener('click', function () {
 
-      // console.log(item.textContent);
+      container_savings_popup.classList.add('hidden')
 
       playground_grid_cells.forEach(function (cell) {
         cell.style.background = "#2E3238"
@@ -108,34 +111,24 @@ const click_save_item = function () {
 
       saving_data.forEach(function (save_item) {
 
-        // console.log(save_item);
-
         if (save_item.name === item.textContent) {
-          // console.log(save_item.cells);
 
           save_item.cells.forEach(function (cell) {
 
             cell.forEach(function (data) {
-
-              // console.log(data);
-
-              // console.log(document.getElementById(data[0]));
               document.getElementById(`cell-${data[0]}`).style.background = `${data[1]}`
-
             })
 
           })
 
-
         }
 
-
       })
-
 
     })
 
   })
+
 
 }
 
@@ -163,15 +156,7 @@ container_saving_box_close.addEventListener('click', function () {
 })
 
 
-// savins_list_items.forEach(function (item) {
 
-//   item.addEventListener('click', function () {
-
-//     console.log(item.textContent);
-
-//   })
-
-// })
 
 
 const updateUI = function () {
