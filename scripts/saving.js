@@ -19,7 +19,7 @@ const create_current_date_label = function () {
   // Комбинируем всё в итоговую строку
   const format_date = `${day}, ${hours}:${minutes}:${seconds}`;
 
-  console.log(format_date);
+  // console.log(format_date);
 
   return format_date;
 

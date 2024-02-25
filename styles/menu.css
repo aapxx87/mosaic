@@ -94,3 +94,8 @@
   cursor: pointer;
   border-radius: 5px;
 }
+
+.image_url {
+  padding: 10px;
+  outline: none;
+}

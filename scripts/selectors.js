@@ -12,6 +12,7 @@ const current_color_box = document.querySelector('.current_color_box')
 const menu = document.querySelector('.menu_container')
 
 const container_savings_popup = document.querySelector('.container__savingsBox')
+const container_img_preview = document.querySelector('.container__originImagePreview')
 
 
 // ? BUTTONS
@@ -25,6 +26,7 @@ const btn_zoom_out_02 = document.querySelector('.btn_zoom_out_02')
 // Menu
 const btn_menu_open = document.querySelector('.btn_menu_open')
 const btn_menu_close = document.querySelector('.close_menu')
+const btn_add_image_link = document.querySelector('.btn_add_image_link')
 
 // Color grid
 const btn_color_to_favourite = document.querySelector('.btn_color_to_favourite')
@@ -36,3 +38,4 @@ const btn_saved_list = document.querySelector('.btn_saved_list')
 const btn_reset = document.querySelector('.btn_reset')
 
 const input_grid = document.querySelector('.input_grid')
+const input_image_link = document.querySelector('.image_url')

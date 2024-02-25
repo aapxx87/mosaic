@@ -1,0 +1,12 @@
+.container__originImagePreview {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  background-color: #2e3238;
+  border: 1px solid gray;
+  z-index: 2;
+  overflow-y: scroll;
+  overflow-x: scroll;
+}
