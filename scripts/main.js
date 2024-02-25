@@ -1,22 +1,3 @@
-const grid_container_playground = document.querySelector('.grid-container')
-const color_picker_container = document.querySelector('.color_picker_container')
-const favourite_colors_container = document.querySelector('.favourite_colors_container')
-const current_color_box = document.querySelector('.current_color_box')
-const menu = document.querySelector('.menu_container')
-
-// Buttons
-const btn_zoom_normal = document.querySelector('.btn_zoom_normal')
-const btn_zoom_out_05 = document.querySelector('.btn_zoom_out_05')
-const btn_zoom_out_035 = document.querySelector('.btn_zoom_out_035')
-const btn_zoom_out_02 = document.querySelector('.btn_zoom_out_02')
-const btn_menu_close = document.querySelector('.close_menu')
-
-const btn_color_to_favourite = document.querySelector('.btn_color_to_favourite')
-const btn_reset_favourite = document.querySelector('.btn_reset_favourite')
-
-const btn_menu_open = document.querySelector('.btn_menu_open')
-
-const input_grid = document.querySelector('.input_grid')
 
 
 colors.forEach(color => {
@@ -57,6 +38,10 @@ const row_col = 160
 
 
 createGrid(grid_container_playground, row_col, row_col);
+
+
+
+const playground_grid_cells = document.querySelectorAll('.grid-item')
 
 
 

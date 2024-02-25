@@ -14,7 +14,7 @@
 }
 
 .grid-item {
-  background-color: #2e3238;
+  background-color: rgb(46, 50, 56);
   /* Цвет фона ячейки */
   border: .1px solid #373c43;
   /* Граница ячейки */
