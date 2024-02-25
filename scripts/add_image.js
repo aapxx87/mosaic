@@ -15,3 +15,18 @@ btn_add_image_link.addEventListener('click', function () {
 
 
 })
+
+
+checkbox_display_image.addEventListener('change', function () {
+
+  if (this.checked) {
+
+    container_img_preview.style.display = 'block'
+
+  } else {
+
+    container_img_preview.style.display = 'none'
+
+  }
+
+})

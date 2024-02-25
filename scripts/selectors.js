@@ -39,3 +39,4 @@ const btn_reset = document.querySelector('.btn_reset')
 
 const input_grid = document.querySelector('.input_grid')
 const input_image_link = document.querySelector('.image_url')
+const checkbox_display_image = document.querySelector('.display_image_preview')

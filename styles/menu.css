@@ -1,7 +1,7 @@
 .menu_container {
   position: absolute;
   width: 100%;
-  height: 750px;
+  height: 570px;
   background-color: #2e3238;
   border-top: 1px solid gray;
   bottom: 0;
@@ -51,7 +51,7 @@
 
 .color_picker_container {
   width: 100%;
-  height: 56%;
+  height: 170px;
   overflow-y: scroll;
   margin-bottom: 15px;
   margin-top: 15px;
@@ -65,23 +65,24 @@
 .favourite_container {
   display: flex;
   width: 100%;
-  height: 13%;
+  height: 90px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
 .current_color_box {
   width: 20%;
-  height: 100%;
+  height: 80px;
   background-color: aqua;
   margin-right: 15px;
   border-radius: 15px;
+  padding: 5px;
 
 }
 
 .favourite_colors_container {
   width: 80%;
-  height: 100%;
+  height: 80px;
   overflow-y: scroll;
   /* border: 1px solid gray; */
 }
@@ -93,6 +94,15 @@
   margin: 1px;
   cursor: pointer;
   border-radius: 5px;
+}
+
+.menu_box {
+  margin: 10px 0px;
+}
+
+.input_grid,
+.sub_header {
+  display: inline-block;
 }
 
 .image_url {
