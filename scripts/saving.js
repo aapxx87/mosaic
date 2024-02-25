@@ -172,3 +172,45 @@ container_saving_box_close.addEventListener('click', function () {
 //   })
 
 // })
+
+
+const updateUI = function () {
+
+  // вытаскиваем из локал сторейдж
+
+  // Извлечение строки из Local Storage
+  const myObjectString = localStorage.getItem('saving_arr');
+
+  // Преобразование строки обратно в объект
+  const saving_data = JSON.parse(myObjectString);
+
+
+  saving_data.forEach(function (item) {
+    // console.log(item);
+
+    const html = `
+    <div class="raw__save_item">
+  
+     <div class="save_name">${item.name}</div>
+    
+     <div class="btn_delete_box">
+        <button class="btn btn_delete">❌</button>
+      </div>
+  
+    </div>
+    `
+
+    document.querySelector('.saving_box').insertAdjacentHTML('afterbegin', html)
+  })
+
+  // console.log(saving_data);
+
+  click_save_item()
+
+}
+
+
+
+updateUI()
+
+
