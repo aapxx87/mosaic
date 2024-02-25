@@ -1,19 +1,5 @@
 const saving_list = []
 
-// saving_1: {
-//   cells: [
-//     ['160', 'rgb(51, 153, 255)'],
-//     ['320', 'rgb(51, 153, 255)'],
-//   ]
-// },
-
-// saving_2: {
-//   cells: [
-//     ['160', 'rgb(51, 153, 255)'],
-//     ['320', 'rgb(51, 153, 255)'],
-//   ]
-// },
-
 
 
 
@@ -69,6 +55,12 @@ btn_save.addEventListener('click', function () {
 
   saving_list.push(obj)
 
+  // Преобразование массива в строку JSON
+  const saving_data_array = JSON.stringify(saving_list);
+
+  // Сохранение строки в Local Storage
+  localStorage.setItem('saving_arr', saving_data_array);
+
 
   // console.log(saving_list);
 
@@ -106,7 +98,15 @@ const click_save_item = function () {
         cell.style.background = "#2E3238"
       })
 
-      saving_list.forEach(function (save_item) {
+      // вытаскиваем из локал сторейдж
+
+      // Извлечение строки из Local Storage
+      const myObjectString = localStorage.getItem('saving_arr');
+
+      // Преобразование строки обратно в объект
+      const saving_data = JSON.parse(myObjectString);
+
+      saving_data.forEach(function (save_item) {
 
         // console.log(save_item);
 
@@ -131,8 +131,6 @@ const click_save_item = function () {
 
 
       })
-
-
 
 
     })
