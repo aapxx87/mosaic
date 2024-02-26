@@ -4,6 +4,7 @@
 @import url('savings_box.css');
 @import url('imagePreview_container.css');
 @import url('container_options.css');
+@import url('buttons.css');
 
 
 
@@ -32,14 +33,4 @@ body {
   max-width: 430px;
   position: relative;
   height: 100vh;
-}
-
-
-.btn {
-  color: #a1a0a0;
-  padding: 5px 10px;
-  font-size: 16px;
-  background-color: transparent;
-  border: 1px solid #a1a0a0;
-  border-radius: 5px;
 }

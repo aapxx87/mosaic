@@ -1,0 +1,26 @@
+.btn {
+  color: #a1a0a0;
+  padding: 5px 10px;
+  font-size: 16px;
+  background-color: transparent;
+  border: 1px solid #706f6f;
+  border-radius: 5px;
+}
+
+.btn_save,
+.btn_saved_list,
+.btn_reset,
+.btn_options,
+.btn_menu_open {
+  font-size: 20px;
+  padding: 5px 15px;
+}
+
+.btn_options,
+.btn_save {
+  margin-right: 5px;
+}
+
+.btn_reset {
+  border-color: #be8282;
+}
