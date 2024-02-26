@@ -36,10 +36,6 @@
       </div>
 
 
-
-
-
-
     </div>
 
 
@@ -65,13 +61,19 @@
 
     <div class="container_options">
 
-      <div class="close_box">
+      <!-- <div class="close_box">
         <button class="btn btn_close_options">x</button>
-      </div>
+      </div> -->
 
-      <div class="menu_box">
-        <p class="sub_header">Show/hide grid:</p>
-        <input type="checkbox" name="" id="" class="input_grid" checked>
+      <div class="menu_box display_flex margin_top">
+        <div>
+          <p class="sub_header">Show/hide grid:</p>
+          <input type="checkbox" name="" id="" class="input_grid" checked>
+        </div>
+
+        <div>
+          <button class="btn btn_close_options">x</button>
+        </div>
       </div>
 
       <div class="menu_box">
@@ -159,12 +161,15 @@
 
       <div class="color_picker_container"></div>
 
-      <p class="sub_header">Favourite</p>
-      <button class="btn btn_color_to_favourite">Add to 🎨</button>
-      <button class="btn btn_reset_favourite">Reset 🎨</button>
+
+      <div class="display_flex">
+        <p class="sub_header">Favourite</p>
+        <button class="btn btn_reset_favourite">🧹</button>
+      </div>
+
 
       <div class="favourite_container">
-        <div class="current_color_box"></div>
+        <div class="current_color_box">+</div>
         <div class="favourite_colors_container"></div>
       </div>
 

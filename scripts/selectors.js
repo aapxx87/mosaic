@@ -33,7 +33,7 @@ const input_image_link = document.querySelector('.image_url')
 const checkbox_display_image = document.querySelector('.display_image_preview')
 
 // Color grid favourite
-const btn_color_to_favourite = document.querySelector('.btn_color_to_favourite')
+const btn_color_to_favourite = document.querySelector('.current_color_box')
 const btn_reset_favourite = document.querySelector('.btn_reset_favourite')
 
 // Saving

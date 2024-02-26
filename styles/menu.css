@@ -31,7 +31,7 @@
 
 
 .sub_header {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .colors_container {
@@ -63,18 +63,22 @@
 }
 
 .current_color_box {
-  width: 20%;
-  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
   background-color: aqua;
-  margin-right: 15px;
+  margin-right: 40px;
   border-radius: 15px;
   padding: 5px;
-
+  font-size: 40px;
+  color: black;
 }
 
 .favourite_colors_container {
-  width: 80%;
-  height: 80px;
+  width: 340px;
+  height: 75px;
   overflow-y: scroll;
   /* border: 1px solid gray; */
 }
@@ -89,7 +93,7 @@
 }
 
 .menu_box {
-  margin: 15px 0px;
+  margin: 20px 0px;
 }
 
 .input_grid,
