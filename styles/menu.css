@@ -1,7 +1,7 @@
 .menu_container {
   position: absolute;
   width: 100%;
-  height: 380px;
+  height: 370px;
   background-color: #2e3238;
   border-top: 1px solid gray;
   bottom: 0;
@@ -89,7 +89,7 @@
 }
 
 .menu_box {
-  margin: 10px 0px;
+  margin: 15px 0px;
 }
 
 .input_grid,
