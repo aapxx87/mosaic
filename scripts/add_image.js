@@ -1,9 +1,10 @@
 
-
+let origin_width;
 
 
 // Добавление изображения в контейнер
 btn_add_image_link.addEventListener('click', function () {
+
   const url = input_image_link.value;
 
   // Создаём элемент изображения
@@ -13,9 +14,14 @@ btn_add_image_link.addEventListener('click', function () {
 
   // Очищаем контейнер и добавляем изображение
   document.getElementById('image-container').innerHTML = '';
-  // container_img_preview.innerHTML = '';
-  // container_img_preview.insertAdjacentElement('afterbegin', img_element);
   document.getElementById('image-container').insertAdjacentElement('afterbegin', img_element);
+
+
+  img_element.onload = function () {
+    origin_width = img_element.naturalWidth;
+    console.log(origin_width); // Должно вывести оригинальную ширину изображения без NaN
+  };
+
 
   // Проверяем, существует ли уже ручка для изменения размера, и добавляем её, если необходимо
   let resizeHandle = document.getElementById('resize-handle');
@@ -33,6 +39,10 @@ btn_add_image_link.addEventListener('click', function () {
 
   // Очищаем поле ввода
   input_image_link.value = '';
+
+
+
+
 });
 
 

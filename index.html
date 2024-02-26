@@ -16,9 +16,27 @@
 
   <div class="app">
 
-    <div class="btn_menu_box">
-      <button class="btn btn_menu_open">M</button>
+
+    <!-- ! ACTIONS CONTAINER  -->
+
+    <div class="parameters_container">
+
+      <button class="btn btn_zoom_out_02">.2x</button>
+      <button class="btn btn_zoom_out_035">.35x</button>
+      <button class="btn btn_zoom_out_05">.5x</button>
+      <button class="btn btn_zoom_normal">1x</button>
+
+      <button class="btn btn_save">💾</button>
+      <button class="btn btn_saved_list">📂</button>
+
+      <button class="btn btn_reset">🧹</button>
+
+      <button class="btn btn_options">🛠️</button>
+      <button class="btn btn_menu_open">🎨</button>
+
     </div>
+
+
 
 
     <!-- ! IMAGE PREVIEW  -->
@@ -37,97 +55,107 @@
 
 
 
+    <!-- ! OPTIONS CONTAINER  -->
 
+    <div class="container_options">
 
-
-
-    <div class="container__savingsBox hidden">
-
-      <div class="saving_box_header">
-        <div class="saving_box_close">
-          Close
-        </div>
+      <div class="close_box">
+        <button class="btn btn_close_options">x</button>
       </div>
 
-      <div class="saving_box">
+      <div class="menu_box">
+        <p class="sub_header">Show/hide grid:</p>
+        <input type="checkbox" name="" id="" class="input_grid" checked>
+      </div>
 
-        <!-- <div class="raw__save_item">
+      <div class="menu_box">
+        <input type="text" class="image_url" placeholder="Add a link">
+        <button class="btn btn_add_image_link">Go</button>
+      </div>
+
+      <div class="menu_box">
+        <p class="sub_header">Show/hide image preview:</p>
+        <input type="checkbox" name="" id="" class="display_image_preview">
+      </div>
+
+      <div class="menu_box"></div>
+      <p class="sub_header">Img scaling:</p>
+      <button class="btn btn_zoom_img_03">.3x</button>
+      <button class="btn btn_zoom_img_05">.5x</button>
+      <button class="btn btn_zoom_img_1x">1x</button>
+      <button class="btn btn_zoom_img_13x">1.3x</button>
+      <button class="btn btn_zoom_img_17x">1.7x</button>
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+  <!-- ! PLAYGROUND CONTAINER  -->
+
+  <div class="playground_container">
+    <div id="grid-container" class="grid-container"></div>
+  </div>
+
+
+
+
+
+
+  <div class="container__savingsBox hidden">
+
+    <div class="saving_box_header">
+      <div class="saving_box_close">
+        Close
+      </div>
+    </div>
+
+    <div class="saving_box">
+
+      <!-- <div class="raw__save_item">
           <div class="save_name">5 / 11: 11 : 2</div>
           <div class="btn_delete_box">
             <button class="btn btn_delete">❌</button>
           </div>
         </div> -->
 
+    </div>
+
+  </div>
+
+
+
+
+  <!-- ! MENU  -->
+
+  <div class="menu_container">
+
+    <div class="close_menu">x</div>
+
+    <div class="colors_container">
+
+      <p class="sub_header">Colours grid</p>
+
+      <div class="color_picker_container"></div>
+
+      <p class="sub_header">Favourite</p>
+      <button class="btn btn_color_to_favourite">Add to 🎨</button>
+      <button class="btn btn_reset_favourite">Reset 🎨</button>
+
+      <div class="favourite_container">
+        <div class="current_color_box"></div>
+        <div class="favourite_colors_container"></div>
       </div>
 
     </div>
 
 
-
-
-    <!-- ! ACTIONS CONTAINER  -->
-
-    <div class="parameters_container">
-
-      <button class="btn btn_zoom_out_02">.2x</button>
-      <button class="btn btn_zoom_out_035">.35x</button>
-      <button class="btn btn_zoom_out_05">.5x</button>
-      <button class="btn btn_zoom_normal">1x</button>
-      <button class="btn btn_save">💾</button>
-      <button class="btn btn_saved_list">📂</button>
-      <button class="btn btn_reset">🧹</button>
-
-    </div>
-
-    <div class="playground_container">
-      <div id="grid-container" class="grid-container"></div>
-    </div>
-
-
-    <!-- ! MENU  -->
-
-    <div class="menu_container">
-
-      <div class="close_menu">x</div>
-
-      <div class="colors_container">
-
-        <p class="sub_header">Colours grid</p>
-
-        <div class="color_picker_container"></div>
-
-        <p class="sub_header">Favourite</p>
-
-        <div class="favourite_container">
-          <div class="current_color_box"></div>
-          <div class="favourite_colors_container"></div>
-        </div>
-
-        <div class="menu_box">
-          <button class="btn btn_color_to_favourite">Add to 🎨</button>
-          <button class="btn btn_reset_favourite">Reset 🎨</button>
-        </div>
-
-        <div class="menu_box">
-          <p class="sub_header">Show/hide grid:</p>
-          <input type="checkbox" name="" id="" class="input_grid" checked>
-        </div>
-
-        <div class="menu_box">
-          <input type="text" class="image_url" placeholder="Add a link">
-          <button class="btn btn_add_image_link">Go</button>
-        </div>
-
-        <div class="menu_box">
-          <p class="sub_header">Show/hide image preview:</p>
-          <input type="checkbox" name="" id="" class="display_image_preview" checked>
-        </div>
-
-
-      </div>
-
-
-    </div>
+  </div>
 
   </div>
 
@@ -139,7 +167,9 @@
   <script src="scripts/saving.js"></script>
   <script src="scripts/add_image.js"></script>
   <script src="scripts/resize_img_box.js"></script>
-  <script src="scripts/scaling_img.js"></script>
+  <script src="scripts/options.js"></script>
+  <script src="scripts/img_scaling.js"></script>
+
 
 
 

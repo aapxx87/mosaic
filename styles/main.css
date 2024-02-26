@@ -3,6 +3,11 @@
 @import url('menu.css');
 @import url('savings_box.css');
 @import url('imagePreview_container.css');
+@import url('container_options.css');
+
+
+
+
 
 
 * {
@@ -37,10 +42,4 @@ body {
   background-color: transparent;
   border: 1px solid #a1a0a0;
   border-radius: 5px;
-}
-
-.btn_menu_open {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
 }

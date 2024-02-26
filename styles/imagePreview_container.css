@@ -8,6 +8,7 @@
   border: 1px solid gray;
   z-index: 2;
   overflow: hidden;
+  display: none;
 }
 
 /* Стили для ручки изменения размера */
