@@ -7,6 +7,28 @@
   background-color: #2e3238;
   border: 1px solid gray;
   z-index: 2;
-  overflow-y: scroll;
-  overflow-x: scroll;
+  overflow: hidden;
+}
+
+/* Стили для ручки изменения размера */
+#resize-handle {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 20px;
+  height: 20px;
+  background: #CCC;
+  cursor: nwse-resize;
+  z-index: 10;
+}
+
+/* Стили для внутреннего контейнера изображения */
+#image-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+  /* Включаем прокрутку внутри внутреннего контейнера */
 }

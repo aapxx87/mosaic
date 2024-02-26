@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/main.css">
   <link rel="manifest" href="manifest.json">
-  <title>Pixel Art v.4.3.</title>
+  <title>Pixel Art v.5.0.</title>
 </head>
 
 <body>
@@ -21,9 +21,25 @@
     </div>
 
 
-    <div class="container__originImagePreview">
-      <!-- <img src="https://i.pinimg.com/564x/0b/cf/23/0bcf23112b29d6b6de3da6486e1ffd58.jpg" alt="" class="image_origin"> -->
+    <!-- ! IMAGE PREVIEW  -->
+
+    <div class="container__originImagePreview" id="resizable-container">
+
+      <div id="image-container">
+        <!-- <img src="https://i.pinimg.com/564x/0b/cf/23/0bcf23112b29d6b6de3da6486e1ffd58.jpg" alt="" class="image_origin"> -->
+      </div>
+
+      <div id="resize-handle"></div>
+
     </div>
+
+
+
+
+
+
+
+
 
     <div class="container__savingsBox hidden">
 
@@ -45,6 +61,11 @@
       </div>
 
     </div>
+
+
+
+
+    <!-- ! ACTIONS CONTAINER  -->
 
     <div class="parameters_container">
 
@@ -117,6 +138,11 @@
   <script src="scripts/main.js"></script>
   <script src="scripts/saving.js"></script>
   <script src="scripts/add_image.js"></script>
+  <script src="scripts/resize_img_box.js"></script>
+
+
+
+
 
 
   <script>
