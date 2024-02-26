@@ -20,6 +20,7 @@ body {
   background-color: #2e3238;
   color: #c8c6c6;
   overflow: hidden;
+  touch-action: none;
 }
 
 .app {
