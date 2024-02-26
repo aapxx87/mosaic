@@ -1,7 +1,7 @@
 .menu_container {
   position: absolute;
   width: 100%;
-  height: 370px;
+  height: 300px;
   background-color: #2e3238;
   border-top: 1px solid gray;
   bottom: 0;
@@ -43,7 +43,7 @@
 
 .color_picker_container {
   width: 100%;
-  height: 150px;
+  height: 110px;
   overflow-y: scroll;
   margin-bottom: 15px;
   margin-top: 15px;
@@ -58,7 +58,7 @@
   display: flex;
   width: 100%;
   height: 90px;
-  padding-top: 10px;
+  padding-top: 5px;
   padding-bottom: 10px;
 }
 
@@ -93,7 +93,7 @@
 }
 
 .menu_box {
-  margin: 20px 0px;
+  margin: 15px 0px;
 }
 
 .input_grid,
