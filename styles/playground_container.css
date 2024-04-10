@@ -4,8 +4,6 @@
   width: 100%;
   height: 815px;
   overflow: scroll;
-  overflow-x: scroll;
-  /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); */
 }
 
 #grid-container {
@@ -14,7 +12,8 @@
 }
 
 .grid-item {
-  background-color: rgb(46, 50, 56);
+  /* background-color: rgb(46, 50, 56); */
+  background-color: transparent;
   /* Цвет фона ячейки */
   border: .1px solid #373c43;
   /* Граница ячейки */

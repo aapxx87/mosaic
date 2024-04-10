@@ -1,6 +1,7 @@
 const container_app = document.querySelector('.app')
 const container_parameters = document.querySelector('.parameters_container')
 const container_saving_box_close = document.querySelector('.saving_box_close')
+const container_background_img = document.querySelector('.background_img_container')
 
 const savins_list_items = document.querySelectorAll('.save_name')
 
@@ -56,3 +57,14 @@ const btn_zoom_img_17x = document.querySelector('.btn_zoom_img_17x')
 
 // Image preview
 const image_preview = document.querySelector('.image_origin')
+
+
+
+// ? Menu
+
+// -- Add background 
+const bg_img_url = document.querySelector('.bg_image_url')
+const btn_aapply_bg_img = document.querySelector('.btn_add_bg_image_link')
+const show_hide_bg_img_checkboz = document.querySelector('.display_background_img')
+const bg_opacity_value = document.querySelector('.opacity_bg_img')
+

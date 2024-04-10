@@ -34,7 +34,7 @@ function createGrid(container, rows, cols) {
 }
 
 
-const row_col = 160
+const row_col = 120
 
 
 createGrid(grid_container_playground, row_col, row_col);
@@ -125,11 +125,6 @@ btn_zoom_out_05.addEventListener('click', function () {
   document.getElementById('grid-container').style.gridTemplateColumns = `repeat(${row_col}, 15px)`;
   document.getElementById('grid-container').style.gridTemplateRows = `repeat(${row_col}, 15px)`;
 
-
-  // for (const item of grid_cells) {
-  //   item.style.border = 'none'
-  // }
-
 })
 
 btn_zoom_out_035.addEventListener('click', function () {
@@ -137,20 +132,12 @@ btn_zoom_out_035.addEventListener('click', function () {
   document.getElementById('grid-container').style.gridTemplateColumns = `repeat(${row_col}, 10px)`;
   document.getElementById('grid-container').style.gridTemplateRows = `repeat(${row_col}, 10px)`;
 
-  // for (const item of grid_cells) {
-  //   item.style.border = 'none'
-  // }
-
 })
 
 btn_zoom_out_02.addEventListener('click', function () {
 
   document.getElementById('grid-container').style.gridTemplateColumns = `repeat(${row_col}, 6px)`;
   document.getElementById('grid-container').style.gridTemplateRows = `repeat(${row_col}, 6px)`;
-
-  // for (const item of grid_cells) {
-  //   item.style.border = 'none'
-  // }
 
 })
 

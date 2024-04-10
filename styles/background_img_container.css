@@ -1,0 +1,12 @@
+.background_img_container {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  height: 630px;
+  /* background: linear-gradient(rgba(46, 50, 56, 0.5), rgba(46, 50, 56, 0.5)), url('https://i.pinimg.com/564x/8d/01/86/8d01865dd664a5bfaa9da22355c2281e.jpg');
+  background-size: cover;
+  background-position: bottom; */
+  z-index: -10;
+
+}

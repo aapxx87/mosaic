@@ -4,6 +4,7 @@
 @import url('savings_box.css');
 @import url('imagePreview_container.css');
 @import url('container_options.css');
+@import url('background_img_container.css');
 @import url('buttons.css');
 
 
@@ -23,7 +24,7 @@ body {
   height: 100vh;
   /* высота вьюпорта */
   font-family: 'Roboto', sans-serif;
-  background-color: #2e3238;
+  background-color: rgb(46, 50, 56);
   color: #c8c6c6;
   overflow: hidden;
   touch-action: none;

@@ -35,9 +35,7 @@
         <button class="btn btn_saved_list">📂</button>
       </div>
 
-
     </div>
-
 
 
 
@@ -55,15 +53,10 @@
 
 
 
-
-
     <!-- ! OPTIONS CONTAINER  -->
 
     <div class="container_options">
 
-      <!-- <div class="close_box">
-        <button class="btn btn_close_options">x</button>
-      </div> -->
 
       <div class="menu_box display_flex margin_top">
         <div>
@@ -77,7 +70,7 @@
       </div>
 
       <div class="menu_box">
-        <input type="text" class="image_url" placeholder="Add a link">
+        <input type="text" class="image_url" placeholder="IMG link">
         <button class="btn btn_add_image_link">Go</button>
       </div>
 
@@ -104,81 +97,106 @@
       </div>
 
 
-    </div>
-
-  </div>
-
-
-
-
-
-
-
-  <!-- ! PLAYGROUND CONTAINER  -->
-
-  <div class="playground_container">
-    <div id="grid-container" class="grid-container"></div>
-  </div>
-
-
-
-
-
-
-  <div class="container__savingsBox hidden">
-
-    <div class="saving_box_header">
-      <div class="saving_box_close">
-        Close
+      <div class="menu_box">
+        <input type="text" class="bg_image_url" placeholder="BG link">
+        <button class="btn btn_add_bg_image_link">Go</button>
       </div>
-    </div>
 
-    <div class="saving_box">
-
-      <!-- <div class="raw__save_item">
-          <div class="save_name">5 / 11: 11 : 2</div>
-          <div class="btn_delete_box">
-            <button class="btn btn_delete">❌</button>
-          </div>
-        </div> -->
-
-    </div>
-
-  </div>
-
-
-
-
-  <!-- ! MENU  -->
-
-  <div class="menu_container">
-
-    <div class="close_menu">x</div>
-
-    <div class="colors_container">
-
-      <p class="sub_header">Colours grid</p>
-
-      <div class="color_picker_container"></div>
-
-
-      <div class="display_flex">
-        <p class="sub_header">Favourite</p>
-        <button class="btn btn_reset_favourite">🧹</button>
+      <div class="menu_box">
+        <p class="sub_header">Show/hide background:</p>
+        <input type="checkbox" name="" id="" class="display_background_img">
       </div>
 
 
-      <div class="favourite_container">
-        <div class="current_color_box">+</div>
-        <div class="favourite_colors_container"></div>
+      <div class="menu_box">
+        <p class="sub_header">Background opacity:</p>
+        <input type="input" name="" id="" class="opacity_bg_img" type="number" value="0.5">
+      </div>
+
+
+    </div>
+
+
+
+
+    <!-- ! PLAYGROUND CONTAINER  -->
+
+    <div class="playground_container">
+      <div id="grid-container" class="grid-container"></div>
+    </div>
+
+
+
+
+
+    <!-- ! BACKGROUND IMG CONTAINER -->
+    <div class="background_img_container"></div>
+
+
+
+
+
+    <!-- ! SAVINGS BOX  -->
+
+    <div class="container__savingsBox hidden">
+
+      <div class="saving_box_header">
+        <div class="saving_box_close">
+          Close
+        </div>
+      </div>
+
+      <div class="saving_box">
+
+        <!-- <div class="raw__save_item">
+            <div class="save_name">5 / 11: 11 : 2</div>
+            <div class="btn_delete_box">
+              <button class="btn btn_delete">❌</button>
+            </div>
+          </div> -->
+
       </div>
 
     </div>
 
 
-  </div>
+
+    <!-- ! MENU  -->
+
+    <div class="menu_container">
+
+      <div class="close_menu">x</div>
+
+      <div class="colors_container">
+
+        <p class="sub_header">Colours grid</p>
+
+        <div class="color_picker_container"></div>
+
+
+        <div class="display_flex">
+          <p class="sub_header">Favourite</p>
+          <button class="btn btn_reset_favourite">🧹</button>
+        </div>
+
+
+        <div class="favourite_container">
+          <div class="current_color_box">+</div>
+          <div class="favourite_colors_container"></div>
+        </div>
+
+      </div>
+
+    </div>
+
+
 
   </div>
+
+
+
+
+
 
 
 
@@ -190,12 +208,14 @@
   <script src="scripts/resize_img_box.js"></script>
   <script src="scripts/options.js"></script>
   <script src="scripts/img_scaling.js"></script>
+  <script src="scripts/add_background.js"></script>
 
 
 
 
 
 
+  <!-- ! PWA -->
 
   <script>
     if ('serviceWorker' in navigator) {
