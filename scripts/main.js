@@ -93,6 +93,7 @@ btn_color_to_favourite.addEventListener('click', function () {
 
 btn_reset_favourite.addEventListener('click', function () {
 
+
   favourite_colors_container.innerHTML = ''
 
 })

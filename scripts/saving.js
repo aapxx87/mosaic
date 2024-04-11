@@ -144,11 +144,12 @@ btn_reset.addEventListener('click', function () {
 
   playground_grid_cells.forEach(function (cell) {
     if (cell.style.background) {
-      cell.style.background = "#2E3238"
+      cell.style.background = "rgba(46, 50, 56, 0)"
     }
   })
 
 })
+
 
 
 container_saving_box_close.addEventListener('click', function () {
