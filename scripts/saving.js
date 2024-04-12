@@ -64,16 +64,33 @@ btn_save.addEventListener('click', function () {
   const saving_data = JSON.parse(myObjectString);
 
 
+  if (saving_data) {
+
+    saving_data.push(obj)
+
+    // Преобразование массива в строку JSON
+    const saving_data_array = JSON.stringify(saving_data);
+
+    // Сохранение строки в Local Storage
+    localStorage.setItem('saving_arr', saving_data_array);
+
+  } else {
+
+    const saving_data = []
+
+    saving_data.push(obj)
+
+    // Преобразование массива в строку JSON
+    const saving_data_array = JSON.stringify(saving_data);
+
+    // Сохранение строки в Local Storage
+    localStorage.setItem('saving_arr', saving_data_array);
 
 
-  saving_data.push(obj)
+  }
 
 
-  // Преобразование массива в строку JSON
-  const saving_data_array = JSON.stringify(saving_data);
 
-  // Сохранение строки в Local Storage
-  localStorage.setItem('saving_arr', saving_data_array);
 
 
   // console.log(saving_list);
