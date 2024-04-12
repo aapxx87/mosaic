@@ -9,7 +9,7 @@ function centerGridContainer() {
   const itemHeight = parseFloat(itemStyle.height) + parseFloat(itemStyle.marginBottom) * 2;
 
   // Предполагая, что сетка квадратная, 120x120 элементов
-  const totalItems = 120; // Измените, если количество элементов в сетке изменится
+  const totalItems = 150; // Измените, если количество элементов в сетке изменится
   const gridSize = totalItems * itemWidth; // Предполагаем, что ширина и высота элементов одинаковы
 
   const viewportWidth = container.offsetWidth;
