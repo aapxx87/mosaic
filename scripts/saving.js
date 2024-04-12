@@ -43,7 +43,7 @@ btn_save.addEventListener('click', function () {
       const cell_id = cell.id.split('-')[1]
       const cell_background = cell.style.background
 
-      if (cell_background !== "rgb(46, 50, 56)") {
+      if (cell_background !== "transparent") {
         cells_arr.push([cell_id, cell_background])
       }
 
@@ -56,10 +56,21 @@ btn_save.addEventListener('click', function () {
     cells: [cells_arr]
   }
 
-  saving_list.push(obj)
+
+  // Извлечение строки из Local Storage
+  const myObjectString = localStorage.getItem('saving_arr');
+
+  // Преобразование строки обратно в объект
+  const saving_data = JSON.parse(myObjectString);
+
+
+
+
+  saving_data.push(obj)
+
 
   // Преобразование массива в строку JSON
-  const saving_data_array = JSON.stringify(saving_list);
+  const saving_data_array = JSON.stringify(saving_data);
 
   // Сохранение строки в Local Storage
   localStorage.setItem('saving_arr', saving_data_array);
@@ -88,6 +99,10 @@ btn_save.addEventListener('click', function () {
 
 })
 
+
+
+
+
 // загрузка сохранненного рисунка
 const click_save_item = function () {
 
@@ -98,7 +113,7 @@ const click_save_item = function () {
       container_savings_popup.classList.add('hidden')
 
       playground_grid_cells.forEach(function (cell) {
-        cell.style.background = "#2E3238"
+        cell.style.background = "transparent"
       })
 
       // вытаскиваем из локал сторейдж
@@ -140,11 +155,15 @@ btn_saved_list.addEventListener('click', function () {
 })
 
 
+
+
+
+
 btn_reset.addEventListener('click', function () {
 
   playground_grid_cells.forEach(function (cell) {
     if (cell.style.background) {
-      cell.style.background = "rgba(46, 50, 56, 0)"
+      cell.style.background = "transparent"
     }
   })
 

@@ -23,7 +23,7 @@ const container_options = document.querySelector('.container_options')
 const btn_zoom_normal = document.querySelector('.btn_zoom_normal')
 const btn_zoom_out_05 = document.querySelector('.btn_zoom_out_05')
 const btn_zoom_out_035 = document.querySelector('.btn_zoom_out_035')
-const btn_zoom_out_02 = document.querySelector('.btn_zoom_out_02')
+// const btn_zoom_out_02 = document.querySelector('.btn_zoom_out_02')
 
 // Menu color palette
 const btn_menu_open = document.querySelector('.btn_menu_open')

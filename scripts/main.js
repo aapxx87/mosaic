@@ -1,3 +1,34 @@
+function centerGridContainer() {
+  const container = document.querySelector('.playground_container');
+  const gridItems = document.querySelectorAll('.grid-item');
+
+  if (gridItems.length === 0) return; // Выход, если элементы сетки не найдены
+
+  const itemStyle = window.getComputedStyle(gridItems[0]);
+  const itemWidth = parseFloat(itemStyle.width) + parseFloat(itemStyle.marginRight) * 2;
+  const itemHeight = parseFloat(itemStyle.height) + parseFloat(itemStyle.marginBottom) * 2;
+
+  // Предполагая, что сетка квадратная, 120x120 элементов
+  const totalItems = 120; // Измените, если количество элементов в сетке изменится
+  const gridSize = totalItems * itemWidth; // Предполагаем, что ширина и высота элементов одинаковы
+
+  const viewportWidth = container.offsetWidth;
+  const viewportHeight = container.offsetHeight;
+
+  // Вычисление начальной позиции скролла
+  const scrollX = (gridSize / 2) - (viewportWidth / 2);
+  const scrollY = (gridSize / 2) - (viewportHeight / 2);
+
+  // Применение вычисленных значений скролла к контейнеру
+  container.scrollLeft = scrollX;
+  container.scrollTop = scrollY;
+}
+
+
+
+
+
+
 
 
 colors.forEach(color => {
@@ -34,10 +65,14 @@ function createGrid(container, rows, cols) {
 }
 
 
-const row_col = 120
+const row_col = 150
 
 
 createGrid(grid_container_playground, row_col, row_col);
+
+
+
+document.addEventListener("DOMContentLoaded", centerGridContainer);
 
 
 
@@ -119,12 +154,18 @@ btn_zoom_normal.addEventListener('click', function () {
   //   item.style.border = '.1px solid #373c43'
   // }
 
+  document.addEventListener("DOMContentLoaded", centerGridContainer);
+
 })
 
 btn_zoom_out_05.addEventListener('click', function () {
 
   document.getElementById('grid-container').style.gridTemplateColumns = `repeat(${row_col}, 15px)`;
   document.getElementById('grid-container').style.gridTemplateRows = `repeat(${row_col}, 15px)`;
+
+  centerGridContainer()
+
+
 
 })
 
@@ -133,14 +174,21 @@ btn_zoom_out_035.addEventListener('click', function () {
   document.getElementById('grid-container').style.gridTemplateColumns = `repeat(${row_col}, 10px)`;
   document.getElementById('grid-container').style.gridTemplateRows = `repeat(${row_col}, 10px)`;
 
-})
+  centerGridContainer()
 
-btn_zoom_out_02.addEventListener('click', function () {
 
-  document.getElementById('grid-container').style.gridTemplateColumns = `repeat(${row_col}, 6px)`;
-  document.getElementById('grid-container').style.gridTemplateRows = `repeat(${row_col}, 6px)`;
 
 })
+
+// btn_zoom_out_02.addEventListener('click', function () {
+
+//   document.getElementById('grid-container').style.gridTemplateColumns = `repeat(${row_col}, 6px)`;
+//   document.getElementById('grid-container').style.gridTemplateRows = `repeat(${row_col}, 6px)`;
+
+//   centerGridContainer()
+
+
+// })
 
 
 
