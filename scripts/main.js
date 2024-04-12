@@ -150,13 +150,10 @@ btn_zoom_normal.addEventListener('click', function () {
   document.getElementById('grid-container').style.gridTemplateColumns = `repeat(${row_col}, 30px)`;
   document.getElementById('grid-container').style.gridTemplateRows = `repeat(${row_col}, 30px)`;
 
-  // for (const item of grid_cells) {
-  //   item.style.border = '.1px solid #373c43'
-  // }
-
-  document.addEventListener("DOMContentLoaded", centerGridContainer);
+  centerGridContainer()
 
 })
+
 
 btn_zoom_out_05.addEventListener('click', function () {
 
@@ -165,9 +162,8 @@ btn_zoom_out_05.addEventListener('click', function () {
 
   centerGridContainer()
 
-
-
 })
+
 
 btn_zoom_out_035.addEventListener('click', function () {
 
@@ -176,9 +172,9 @@ btn_zoom_out_035.addEventListener('click', function () {
 
   centerGridContainer()
 
-
-
 })
+
+
 
 // btn_zoom_out_02.addEventListener('click', function () {
 
