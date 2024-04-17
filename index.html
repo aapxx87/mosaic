@@ -57,20 +57,37 @@
 
     <div class="container_options">
 
+      <button class="btn btn_close_options">x</button>
 
-      <div class="menu_box display_flex margin_top">
-        <div>
-          <p class="sub_header">Show/hide grid:</p>
-          <input type="checkbox" name="" id="" class="input_grid" checked>
-        </div>
 
-        <div>
-          <button class="btn btn_close_options">x</button>
-        </div>
+      <div class="option_label">
+        Grid settings
       </div>
 
       <div class="menu_box">
-        <input type="text" class="image_url" placeholder="IMG link">
+        <div>
+          <p class="sub_header">Show/hide grid:</p>
+          <input type="checkbox" name="" id="" class=" input_grid" checked>
+        </div>
+      </div>
+
+
+      <div class="menu_box">
+        <p class="sub_header">Grid scaling:</p>
+        <button class="btn btn_zoom_out_035">.35x</button>
+        <button class="btn btn_zoom_out_05">.5x</button>
+        <button class="btn btn_zoom_normal">1x</button>
+      </div>
+
+
+
+
+      <div class="option_label">
+        Image settings
+      </div>
+
+      <div class="menu_box">
+        <input type="text" class="input image_url" placeholder="IMG link">
         <button class="btn btn_add_image_link">Go</button>
       </div>
 
@@ -88,17 +105,16 @@
         <button class="btn btn_zoom_img_17x">1.7x</button>
       </div>
 
-      <div class="menu_box">
-        <p class="sub_header">Grid scaling:</p>
-        <!-- <button class="btn btn_zoom_out_02">.2x</button> -->
-        <button class="btn btn_zoom_out_035">.35x</button>
-        <button class="btn btn_zoom_out_05">.5x</button>
-        <button class="btn btn_zoom_normal">1x</button>
+
+
+
+
+      <div class="option_label">
+        Background settings
       </div>
 
-
       <div class="menu_box">
-        <input type="text" class="bg_image_url" placeholder="BG link">
+        <input type="text" class="input bg_image_url" placeholder="BG link">
         <button class="btn btn_add_bg_image_link">Go</button>
       </div>
 
@@ -110,9 +126,16 @@
 
       <div class="menu_box">
         <p class="sub_header">Background opacity:</p>
-        <input type="input" name="" id="" class="opacity_bg_img" type="number" value="0.5">
+        <input type="input" name="" id="" class="input opacity_bg_img" type="number" value="0.5">
       </div>
 
+
+
+
+
+      <div class="option_label">
+        Upload savings
+      </div>
 
       <div class="menu_box">
         <div class="arrayDisplay"></div>

@@ -3,13 +3,13 @@
   width: 95%;
   left: 2.5%;
   height: 300px;
-  background-color: #2e3238;
+  background-color: #363a41;
   bottom: 30px;
   /* display: none; */
   padding: 8px;
   z-index: 3;
   display: none;
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -30,11 +30,6 @@
   display: block;
 }
 
-
-.sub_header {
-  font-size: 16px;
-}
-
 .colors_container {
   width: 100%;
   height: 100%;
@@ -49,6 +44,7 @@
   margin-bottom: 15px;
   margin-top: 15px;
   padding-top: 3px;
+  padding-left: 8px;
 }
 
 .color_picker_container::-webkit-scrollbar {
@@ -93,16 +89,11 @@
   border-radius: 5px;
 }
 
-.menu_box {
-  margin: 15px 0px;
-}
-
 .input_grid,
 .sub_header {
   display: inline-block;
 }
 
 .image_url {
-  padding: 10px;
   outline: none;
 }

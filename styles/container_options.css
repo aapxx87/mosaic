@@ -1,16 +1,26 @@
 .container_options {
   position: absolute;
-  background-color: #2e3238;
+  background-color: #363a41;
   /* border: 1px solid gray; */
   top: 50px;
   left: 2.5%;
   width: 95%;
-  height: 500px;
+  height: 700px;
   z-index: 5;
   display: none;
   padding: 15px;
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn_close_options {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
+.input {
+  padding: 5px;
 }
 
 .display_flex {
@@ -20,6 +30,21 @@
 
 .margin_top {
   margin-top: 0px;
+}
+
+.option_label {
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  color: #969696;
+}
+
+.sub_header {
+  font-size: 16px;
+}
+
+.menu_box {
+  margin-bottom: 10px;
 }
 
 .arrayDisplay {
