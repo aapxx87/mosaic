@@ -51,6 +51,12 @@ btn_save.addEventListener('click', function () {
 
   })
 
+  console.log(cells_arr);
+
+  array_save_box.textContent = JSON.stringify(cells_arr);
+
+
+
   const obj = {
     name: saving_name,
     cells: [cells_arr]
@@ -120,6 +126,25 @@ btn_save.addEventListener('click', function () {
 
 
 
+copy_btn.addEventListener('click', () => {
+
+  const text = array_save_box.textContent;
+
+  navigator.clipboard.writeText(text).then(() => {
+    console.log('Текст скопирован в буфер обмена');
+  }).catch(err => {
+    console.error('Ошибка при копировании текста: ', err);
+  });
+
+
+  array_save_box.textContent = ''
+
+});
+
+
+
+
+
 // загрузка сохранненного рисунка
 const click_save_item = function () {
 
@@ -164,7 +189,56 @@ const click_save_item = function () {
 
 }
 
-// click_save_item()
+
+
+
+
+
+document.getElementById('loadArrayButton').addEventListener('click', () => {
+
+  const inputText = document.getElementById('textInput').value;
+
+  try {
+
+    const arrayFromText = JSON.parse(inputText);
+
+    if (Array.isArray(arrayFromText)) {
+
+      // console.log('Преобразованный массив: ', arrayFromText);
+      // Здесь вы можете выполнить дополнительные манипуляции с массивом
+
+
+      container_savings_popup.classList.add('hidden')
+
+      playground_grid_cells.forEach(function (cell) {
+        cell.style.background = "transparent"
+      })
+
+
+      arrayFromText.forEach(function (data) {
+        document.getElementById(`cell-${data[0]}`).style.background = `${data[1]}`
+      })
+
+
+    } else {
+      console.error('Введённый текст не является массивом');
+    }
+
+  } catch (e) {
+
+    console.error('Ошибка при преобразовании текста в массив: ', e);
+
+  }
+
+});
+
+
+
+
+
+
+
+
 
 
 btn_saved_list.addEventListener('click', function () {

@@ -68,3 +68,8 @@ const btn_aapply_bg_img = document.querySelector('.btn_add_bg_image_link')
 const show_hide_bg_img_checkboz = document.querySelector('.display_background_img')
 const bg_opacity_value = document.querySelector('.opacity_bg_img')
 
+
+// Saving arr/text
+const array_save_box = document.querySelector('.arrayDisplay')
+const copy_btn = document.querySelector('.copyButton')
+
