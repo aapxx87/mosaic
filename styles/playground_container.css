@@ -1,6 +1,6 @@
 .playground_container {
   position: fixed;
-  top: 50px;
+  top: 55px;
   /* bottom: 60px; */
   width: 100%;
   height: 740px;
@@ -27,7 +27,7 @@
 
 .fav_colors_front_box {
   position: absolute;
-  bottom: 35px;
+  bottom: 40px;
 
   height: 34px;
   width: 95%;
