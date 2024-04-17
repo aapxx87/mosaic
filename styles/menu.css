@@ -74,10 +74,16 @@
 }
 
 .favourite_colors_container {
-  width: 340px;
-  height: 75px;
+  /* width: 340px;
+  height: 75px; */
   overflow-y: scroll;
   /* border: 1px solid gray; */
+}
+
+
+.fav_colors_menu_box {
+  width: 340px;
+  /* height: 75px; */
 }
 
 .color-choice {
