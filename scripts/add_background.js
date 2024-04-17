@@ -9,6 +9,6 @@ btn_aapply_bg_img.addEventListener('click', function () {
   container_background_img.style.backgroundSize = 'cover'
   container_background_img.style.backgroundPosition = 'bottom'
 
-  bg_img_url.value = ''
+  // bg_img_url.value = ''
 
 })
