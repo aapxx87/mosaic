@@ -1,5 +1,5 @@
 .background_img_container {
-  position: absolute;
+  position: fixed;
   top: 55px;
   left: 0;
   width: 100%;
