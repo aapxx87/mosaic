@@ -100,6 +100,7 @@ favourite_colors_container.addEventListener('click', function (event) {
     color = event.target.getAttribute('data-color');
   }
   current_color_box.style.backgroundColor = color
+  document.querySelector('.btn_saved_list').style.background = color
 
 });
 
