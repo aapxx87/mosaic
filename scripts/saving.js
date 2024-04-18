@@ -43,7 +43,7 @@ btn_save.addEventListener('click', function () {
       const cell_id = cell.id.split('-')[1]
       const cell_background = cell.style.background
 
-      if (cell_background !== "transparent" || cell_background !== "none") {
+      if (cell_background && cell_background !== "transparent") {
         cells_arr.push([cell_id, cell_background])
       }
 
