@@ -43,7 +43,7 @@ btn_save.addEventListener('click', function () {
       const cell_id = cell.id.split('-')[1]
       const cell_background = cell.style.background
 
-      if (cell_background !== "transparent") {
+      if (cell_background !== "transparent" || cell_background !== "none") {
         cells_arr.push([cell_id, cell_background])
       }
 
@@ -140,6 +140,7 @@ copy_btn.addEventListener('click', () => {
   array_save_box.textContent = ''
 
 });
+
 
 
 
