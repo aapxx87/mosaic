@@ -38,14 +38,17 @@ btn_save.addEventListener('click', function () {
 
   playground_grid_cells.forEach(function (cell) {
 
-    if (cell.style.background) {
+    const styles = getComputedStyle(cell)
+
+    const background = styles.backgroundColor
+
+    if (background && background !== "rgba(0, 0, 0, 0)") {
 
       const cell_id = cell.id.split('-')[1]
-      const cell_background = cell.style.background
+      const cell_background = background
 
-      if (cell_background && cell_background !== "transparent") {
-        cells_arr.push([cell_id, cell_background])
-      }
+      cells_arr.push([cell_id, cell_background])
+
 
     }
 
