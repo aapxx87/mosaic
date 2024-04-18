@@ -1,16 +1,19 @@
 .container_options {
   position: absolute;
-  background-color: #363a41;
+  background-color: rgba(54, 58, 65, 0.9);
   /* border: 1px solid gray; */
   top: 50px;
   left: 2.5%;
   width: 95%;
-  height: 540px;
+  height: 630px;
   z-index: 5;
   display: none;
   padding: 15px;
   border-radius: 10px;
   box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.2);
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .btn_close_options {

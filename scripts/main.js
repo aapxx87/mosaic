@@ -83,7 +83,8 @@ const playground_grid_cells = document.querySelectorAll('.grid-item')
 const grid_cells = document.querySelectorAll('.grid-item')
 
 
-let color = '#2e3238'
+let color = 'transparent'
+
 
 
 color_picker_container.addEventListener('click', function (event) {
@@ -91,6 +92,7 @@ color_picker_container.addEventListener('click', function (event) {
     color = event.target.getAttribute('data-color');
   }
   current_color_box.style.backgroundColor = color
+  document.querySelector('.btn_saved_list').style.background = color
 });
 
 favourite_colors_container.addEventListener('click', function (event) {
@@ -98,6 +100,7 @@ favourite_colors_container.addEventListener('click', function (event) {
     color = event.target.getAttribute('data-color');
   }
   current_color_box.style.backgroundColor = color
+
 });
 
 
@@ -110,6 +113,8 @@ for (const item of grid_cells) {
   })
 
 }
+
+
 
 
 btn_color_to_favourite.addEventListener('click', function () {
@@ -127,7 +132,6 @@ btn_color_to_favourite.addEventListener('click', function () {
 
 
 btn_reset_favourite.addEventListener('click', function () {
-
 
   favourite_colors_container.innerHTML = ''
 
@@ -149,6 +153,16 @@ btn_zoom_normal.addEventListener('click', function () {
 
   document.getElementById('grid-container').style.gridTemplateColumns = `repeat(${row_col}, 30px)`;
   document.getElementById('grid-container').style.gridTemplateRows = `repeat(${row_col}, 30px)`;
+
+  centerGridContainer()
+
+})
+
+
+btn_zoom_out_075.addEventListener('click', function () {
+
+  document.getElementById('grid-container').style.gridTemplateColumns = `repeat(${row_col}, 23px)`;
+  document.getElementById('grid-container').style.gridTemplateRows = `repeat(${row_col}, 23px)`;
 
   centerGridContainer()
 
