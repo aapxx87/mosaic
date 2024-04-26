@@ -79,3 +79,6 @@ const copy_btn = document.querySelector('.copyButton')
 
 const input_color_code = document.querySelector('.input_add_image')
 
+const checkbox_display_favourite = document.querySelector('.favourite_display_checkbox')
+const favourite_colors_box = document.querySelector('.fav_colors_front_box')
+

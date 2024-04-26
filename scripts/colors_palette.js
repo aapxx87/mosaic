@@ -64,3 +64,17 @@ btn_menu_close.addEventListener('click', function () {
 btn_menu_open.addEventListener('click', function () {
   menu.style.display = 'block'
 })
+
+
+// ? DISPLAY FAVOURITE COLORS BOX
+
+checkbox_display_favourite.addEventListener('change', function () {
+
+  if (checkbox_display_favourite.checked) {
+    favourite_colors_box.classList.remove('hidden')
+  } else {
+    favourite_colors_box.classList.add('hidden')
+  }
+
+
+})
