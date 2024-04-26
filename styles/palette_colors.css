@@ -80,8 +80,8 @@
   height: 75px; */
   overflow-y: scroll;
   /* border: 1px solid gray; */
-  border-radius: 5px;
-  padding: 2px;
+  border-radius: 8px;
+  padding: 3px;
 }
 
 
@@ -89,9 +89,9 @@
   position: absolute;
   bottom: 50px;
 
-  height: 38px;
-  width: 80%;
-  left: 10%;
+  height: 40px;
+  width: 82%;
+  left: 9%;
 
   background-color: rgba(54, 58, 65, 0.9);
   box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.2);
