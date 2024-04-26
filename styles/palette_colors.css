@@ -2,7 +2,7 @@
   position: absolute;
   width: 95%;
   left: 2.5%;
-  height: 260px;
+  height: 330px;
   background-color: rgba(54, 58, 65, 0.9);
   bottom: 85px;
   /* display: none; */
@@ -104,4 +104,8 @@
 
 .image_url {
   outline: none;
+}
+
+.input_add_image {
+  margin: 10px 0;
 }

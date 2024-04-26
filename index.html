@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/main.css">
   <link rel="manifest" href="manifest.json">
-  <title>Pixel Art v.6.2.</title>
+  <title>Pixel Art v.6.3.</title>
 </head>
 
 <body>
@@ -81,6 +81,7 @@
 
       <div class="menu_box">
         <p class="sub_header">Grid scaling:</p>
+        <button class="btn btn_zoom_out_02">.2x</button>
         <button class="btn btn_zoom_out_035">.35x</button>
         <button class="btn btn_zoom_out_05">.5x</button>
         <button class="btn btn_zoom_out_075">.75x</button>
@@ -241,6 +242,15 @@
         <div class="color_picker_container"></div>
 
 
+        <p class="sub_header">Add color</p>
+
+        <div>
+          <input type="text" class="input input_add_image" placeholder="Hex colour">
+        </div>
+
+
+
+
         <div class="display_flex">
           <p class="sub_header">Favourite</p>
         </div>
@@ -268,21 +278,44 @@
 
 
   <script src="scripts/selectors.js"></script>
-  <script src="scripts/color_palette.js"></script>
+  <script src="scripts/color_palette_base.js"></script>
+
+
   <script src="scripts/main.js"></script>
+
+
+  <!-- ? PLAYGROUND GRID -->
+  <script src="scripts/grid_manipulation.js"></script>
+  <script src="scripts/grid_scaling.js"></script>
+
+
+  <!-- ? SAVE AND UPLOAD -->
   <script src="scripts/saving.js"></script>
+
+
+  <!-- ? IMAGE EXAMPLE -->
   <script src="scripts/add_image.js"></script>
-  <script src="scripts/resize_img_box.js"></script>
-  <script src="scripts/options.js"></script>
   <script src="scripts/img_scaling.js"></script>
+  <script src="scripts/resize_img_box.js"></script>
+
+
+  <script src="scripts/options.js"></script>
+
+
+  <!-- ? BACKGROUND IMAGE -->
   <script src="scripts/add_background.js"></script>
 
 
+  <!-- ? COLORS -->
+  <script src="scripts/colors_palette.js"></script>
+  <script src="scripts/add_color_code.js"></script>
 
 
 
 
-  <!-- ! PWA -->
+
+
+  <!-- ? PWA -->
 
   <script>
     if ('serviceWorker' in navigator) {

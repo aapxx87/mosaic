@@ -17,14 +17,14 @@ const container_img_preview = document.querySelector('.container__originImagePre
 const container_options = document.querySelector('.container_options')
 
 
-// ? BUTTONS
+// ? OPTIONS
 
-// Zooming playground area
+// Zooming grid
 const btn_zoom_normal = document.querySelector('.btn_zoom_normal')
 const btn_zoom_out_075 = document.querySelector('.btn_zoom_out_075')
 const btn_zoom_out_05 = document.querySelector('.btn_zoom_out_05')
 const btn_zoom_out_035 = document.querySelector('.btn_zoom_out_035')
-// const btn_zoom_out_02 = document.querySelector('.btn_zoom_out_02')
+const btn_zoom_out_02 = document.querySelector('.btn_zoom_out_02')
 
 // Menu color palette
 const btn_menu_open = document.querySelector('.btn_menu_open')
@@ -59,10 +59,6 @@ const btn_zoom_img_17x = document.querySelector('.btn_zoom_img_17x')
 // Image preview
 const image_preview = document.querySelector('.image_origin')
 
-
-
-// ? Menu
-
 // -- Add background 
 const bg_img_url = document.querySelector('.bg_image_url')
 const btn_aapply_bg_img = document.querySelector('.btn_add_bg_image_link')
@@ -73,4 +69,13 @@ const bg_opacity_value = document.querySelector('.opacity_bg_img')
 // Saving arr/text
 const array_save_box = document.querySelector('.arrayDisplay')
 const copy_btn = document.querySelector('.copyButton')
+
+
+
+
+
+
+// ? COLOR PALETTE
+
+const input_color_code = document.querySelector('.input_add_image')
 
